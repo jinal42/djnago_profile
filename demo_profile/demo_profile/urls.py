@@ -19,7 +19,8 @@ from login import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.add_data,name='addshow'),
+    path('add',views.add_data,name='addshow'),
+    path('',views.insert_data),
     path('delete/<int:id>/',views.dele,name='deletedata'),
 
 
